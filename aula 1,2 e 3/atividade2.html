@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+
+	function defineTitPag(){
+
+		var titPag = document.getElementById('titPag').value;
+		var tituloH1 = document.createElement("H1");
+		var titulo = document.createTextNode(titPag);
+		var tituloDiv = document.getElementById('titulo');
+
+		tituloH1.appendChild(titulo);
+		tituloH1.style.color = "blue";	
+		tituloDiv.appendChild(tituloH1);
+	
+	}
+	</script>
+
+	<title>Atividade 2</title>
+
+</head>
+<body>
+
+	<div id="titulo">	
+	</div>
+	<hr>
+	<form>
+		Defina o título desta página:<br>
+		<input type="text" id="titPag"><br><br>
+		<input type="button" value="OK" onclick = "defineTitPag();">
+	</form>
+	<br>
+
+</body>
+</html>
