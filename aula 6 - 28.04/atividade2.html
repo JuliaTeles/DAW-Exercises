@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+		
+	<!-- Nome: Júlia Téles Cruz		3ºINFD -->
+	<!-- 28.04   Atividade 2, Intervalo -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Intervalo</title>
+
+	<script type="text/javascript">
+		
+		function acao(){
+			document.getElementById("msg").innerHTML =  document.getElementById("msg").innerHTML + " Executando ... </br>";
+		}
+
+		//setInterval(acao, 2000);
+		var timer = setInterval(acao, 2000);
+
+	</script>
+
+</head>
+<body>
+
+	<button onclick="clearInterval(timer);"> Parar execução </button>
+
+	<div id="msg"></div>
+
+</body>
+</html>

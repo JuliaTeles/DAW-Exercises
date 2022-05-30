@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+		
+	<!-- Nome: Júlia Téles Cruz		3ºINFD -->
+	<!-- 28.04   Atividade 6, listener -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>listener</title>
+
+	<script type="text/javascript">
+
+		var ok = document.getElementById('botao1');
+
+		ok.addEventListener('click', function(){
+			alert('Alerta do botão 1!');
+		})
+
+		var myFunc = function(){
+			alert('Alerta do botão 2!');
+		}
+
+		document.querySelector("#botao2").addEventListener('click', myFunc);
+
+
+	</script>
+
+</head>
+<body>
+
+	<input type="button" id="botao1" name="botao1" value="Ok1">
+	<input type="button" id="botao2" name="botao2" value="Ok2">
+</body>
+</html>

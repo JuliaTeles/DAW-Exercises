@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+		
+	<!-- Nome: Júlia Téles Cruz		3ºINFD -->
+	<!-- 28.04   Atividade 3, Relogio -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Relogio</title>
+
+	<script type="text/javascript">
+		
+		var myInterval = setInterval(myTimer, 1000)
+
+		function myTimer(){
+			var date = new Date();
+			document.getElementById("relogio").innerHTML =  date.toLocaleTimeString();
+		}
+
+		function pararRelogio(){                                                                 
+			clearInterval(myInterval);
+		}
+
+
+	</script>
+
+</head>
+<body>
+
+	<button onclick="pararRelogio();"> Parar execução </button>
+
+	<p id="relogio"></p>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+		
+	<!-- Nome: Júlia Téles Cruz		3ºINFD -->
+	<!-- 28.04   Atividade 1, Timer -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Timer</title>
+
+	<script type="text/javascript">
+		
+		function acao(){
+			document.getElementById("msg").innerHTML =  document.getElementById("msg").innerHTML + " Executando ... </br>";
+		}
+
+		//setTimeout(acao, 5000);
+		var timer = setTimeout(acao, 5000);
+
+	</script>
+
+</head>
+<body>
+
+	<button onclick="clearTimeout(timer);"> Parar execução </button>
+
+	<div id="msg"></div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+		
+	<!-- Nome: Júlia Téles Cruz		3ºINFD -->
+	<!-- 28.04   Atividade 5, SessionStorage - Cookies -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SessionStorage</title>
+
+	<script type="text/javascript">
+
+		function gravar(){
+			sessionStorage.setItem("ra", document.getElementById('ra').value);
+
+			alert("Ra gravado");
+			document.getElementById('ra').value = ""; 
+		}
+
+		function ler(){
+			var obj = sessionStorage.getItem('ra');
+
+			if(obj != null){
+				alert(obj)
+			}else{
+				alert("A chave procurada não existe no sessionStorage!")
+			}
+		}
+
+		function remover(){
+			sessionStorage.removeItem('ra');
+
+			alert("A chave Ra foi removida!");
+		}
+
+
+	</script>
+
+</head>
+<body>
+
+	<h1>SessionStorage </h1>
+
+	Olá <span id="aluno"></span>
+
+	<br><br>
+
+	<form>
+		RA: <br>
+		<input type="text" id="ra">
+		<button type="button" onclick="gravar();">Gravar</button>
+
+		<br>
+		<hr>
+		<button type="button" onclick="ler();">Ler</button>
+		<button type="button" onclick="remover();">Remover</button>
+		<hr>
+
+
+	</form>
+
+</body>
+</html>
