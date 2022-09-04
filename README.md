@@ -16,7 +16,13 @@ ________
 
 ###### English | ENG
 ### Introduction
+The repository contains activities done in the classes of Web Application Development III (DAW III) of the third year of the Informatics course - COTIL.
+Here you can find content passed in class and short activities for participation grade, in addition to more elaborate projects that made up the final grade.
+All proposals were made by Professor Simone B. and interpreted/coded by me, in case there are more collaborators in any of the files present
+they will be mentioned in the header of the codes.
 
 ### Requirements
+The projects were made in HTML5, Javasript, PHP, primarily using SublimeText and VS Code, so you will need a similar platform to run them.
+Furthermore, the files produced may contain links to the database, where they were connected to MySQL.
 
 ________
