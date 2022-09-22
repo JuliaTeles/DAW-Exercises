@@ -17,7 +17,7 @@
 </html>
 
 <?php
-	include("conexao.php");
+	
 
 	$id = $_POST['id'];
 	$novocliente = $_POST['cliente'];
@@ -26,8 +26,8 @@
 	$novopagamento = $_POST['pagamento'];
 
 	try{
-
-		$stmt = $pdo->prepare('UPDATE Lojinha SET cliente = :novocliente, produto = :novoproduto, valor = :novovalor, pagamento := novopagamento WHERE id = :id');
+		include("conexao.php");
+		$stmt = $pdo->prepare("UPDATE Lojinha SET cliente = :novocliente, produto = :novoproduto, valor = :novovalor, pagamento := novopagamento WHERE id = :id");
 			$stmt->bindParam(':novocliente', $novocliente);
 			$stmt->bindParam(':novoproduto', $novoproduto);
 			$stmt->bindParam(':novovalor', $novovalor);
@@ -39,8 +39,7 @@
 	}catch(PDOException $e){
 			echo 'Error: ' . $e->getMessage();
 	}
-
-		$pdo = null;
+	$pdo = null;
 
 ?>
 

@@ -39,17 +39,17 @@
 					<form method='post'>
 					<table border='1px'>";
 			echo "<tr>
-					<th></th> <th>ID<th> <th>Cliente</th> <th>Produto</th> <th>Valor</th> <th>Situação</th>
+					<th></th> <th>ID</th> <th>Cliente</th> <th>Produto</th> <th>Valor</th> <th>Situação</th>
 				  </tr>";
 
 			while($row = $stmt->fetch()){
 				echo "<tr>";
 				echo "<td> <input type='radio' name='id' value='" . $row['id'] . "'> </td>";
 				echo "<td>" . $row['id'] . "</td>";
-				echo "<td>" . $row['cliente'] . "</td>";
-				echo "<td>" . $row['produto'] . "</td>";
-				echo "<td>" . $row['valor'] . "</td>";
-				echo "<td>" . $row['pagamento'] . "</td>";
+				echo "<td> <input type='text' size='10' name='cliente' value='" . $row['cliente'] . "' readonly> </td>";
+				echo "<td> <input type='text' size='20' name='produto' value='" . $row['produto'] . "' readonly></td>";
+				echo "<td> <input type='text' size='5' name='valor' value='" . $row['valor'] . "' readonly></td>";
+				echo "<td> <input type='text' size='10' name='pagamento' value='" . $row['pagamento'] . "' readonly></td>";
 				echo "</tr>";
 
 			}

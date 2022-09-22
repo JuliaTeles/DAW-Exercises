@@ -30,8 +30,8 @@
 			Situação de pagamento:
 			<select name="pagamento">
 				<option></option>
-				<option value="pago"> Pago </option>
-				<option value="falta"> Falta pagar</option>
+				<option value="Pago"> Pago </option>
+				<option value="Falta pagar"> Falta pagar</option>
 			</select>
 			<br><br>
 
@@ -62,7 +62,7 @@
 				include("conexao.php");
 
 			
-				$stmt = $pdo->prepare("insert into lojinha (cliente, produto, valor, pagamento) values (:cliente, :produto, :valor, :pagamento)");
+				$stmt = $pdo->prepare("insert into Lojinha (cliente, produto, valor, pagamento) values (:cliente, :produto, :valor, :pagamento)");
 				$stmt->bindParam(':cliente',$cliente);
 				$stmt->bindParam(':produto',$produto);
 				$stmt->bindParam(':valor',$valor);

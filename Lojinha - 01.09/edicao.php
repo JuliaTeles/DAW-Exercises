@@ -18,30 +18,43 @@
 
 <?php
 
-	if(!isset($_POST["produto"])){
+	if(!isset($_POST["id"])){
 		echo "<p style='text-align: center;'>Selecione a venda a ser editada!</p>";
 	}
 	else{
 
 	include("conexao.php");
 	try{
-	
+
+			$id = $_POST['id'];
+			$cliente = $_POST['cliente'];
+			$produto = $_POST['produto'];
+			$valor = $_POST['valor'];
+			$pagamento = $_POST['pagamento'];
+		
+
 			echo  "<div style= 'margin-left: 10%; margin-right: 10%;'>\n
-		<form method='POST' action='altera.php'>\n
+			<form method='POST' action='altera.php'>\n
+			
+			ID: \n
+			<input type='text' readonly size='5' name='id' value='" . $id . "'>\n
+			<br><br>\n
+
+
 			Cliente: \n
-			<input type='text' size='10' name='cliente'>\n
+			<input type='text' size='10' name='cliente' value='" . $cliente . "'>\n
 			<br><br>\n
 
 			Produto:\n
-			<input type='text' size='30' name='produto'>\n
+			<input type='text' size='30' name='produto' value='" . $produto . "'>\n
 			<br><br>\n
 
 			Valor da venda: \n
-			<input type='text' size='30' name='valor'>\n
+			<input type='text' size='30' name='valor' value='" . $valor . "'>\n
 			<br><br>\n
 
 			Situação de pagamento:\n
-			<select name='pagamento'>\n
+			<select name='pagamento' >\n
 				<option></option>\n
 				<option value='pago'> Pago </option>\n
 				<option value='falta'> Falta pagar</option>\n
@@ -52,7 +65,7 @@
 		</form>\n
 		<hr>\n
 	</div>\n";
-			}
+			
 
 		}catch(PDOException $e){
 			echo 'Error: ' . $e->getMessage();
