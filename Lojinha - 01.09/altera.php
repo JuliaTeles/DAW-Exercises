@@ -27,11 +27,12 @@
 
 	try{
 		include("conexao.php");
-		$stmt = $pdo->prepare("UPDATE Lojinha SET cliente = :novocliente, produto = :novoproduto, valor = :novovalor, pagamento := novopagamento WHERE id = :id");
+		$stmt = $pdo->prepare("UPDATE Lojinha SET cliente = :novocliente, produto = :novoproduto, valor = :novovalor, pagamento = :novopagamento WHERE id = :id");
 			$stmt->bindParam(':novocliente', $novocliente);
 			$stmt->bindParam(':novoproduto', $novoproduto);
 			$stmt->bindParam(':novovalor', $novovalor);
 			$stmt->bindParam(':novopagamento', $novopagamento);
+			$stmt->bindParam(':id', $id);
 			$stmt->execute();
 
 			echo "Os dados da venda de id - $id , foram alterados!";
