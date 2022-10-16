@@ -1,5 +1,5 @@
 # DAW-Exercises
-###### &copy;Júlia Téles Cruz | 2022
+###### &copy;Júlia Téles Cruz | 2020 - 2022
 ________
 
 ###### Português-Brasil | PT-BR
