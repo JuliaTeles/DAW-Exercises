@@ -4,7 +4,7 @@ ________
 
 ###### Português-Brasil | PT-BR
 ### Introdução
-O repositório contém atividades feitas nas aulas de Desenvolvimento de Aplicativos Web III (DAW III) do terceiro ano do curso de Informática - COTIL. 
+O repositório contém atividades feitas nas aulas de Desenvolvimento de Aplicativos Web (DAW) do primeiro ao terceiro ano do curso de Informática - COTIL. 
 Aqui pode-se encontrar conteúdos passados em aula e atividades curtas para nota de participação, além de projetos mais elaborados que compuseram a nota final.
 Todas as propostas foram feitas pela professora Simone B. e interpretadas/codificadas por mim, caso aja mais colaboradores em algum dos arquivos presentes
 os mesmos serão citados no cabeçalho dos códigos. 
@@ -16,7 +16,7 @@ ________
 
 ###### English | ENG
 ### Introduction
-The repository contains activities done in the classes of Web Application Development III (DAW III) of the third year of the Informatics course - COTIL.
+The repository contains activities done in the classes of Web Application Development (DAW) of the Informatics course - COTIL.
 Here you can find content passed in class and short activities for participation grade, in addition to more elaborate projects that made up the final grade.
 All proposals were made by Professor Simone B. and interpreted/coded by me, in case there are more collaborators in any of the files present
 they will be mentioned in the header of the codes.
