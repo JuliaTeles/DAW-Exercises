@@ -1,4 +1,4 @@
-# DAW-Exercises
+# Exercícios de DAW
 ###### &copy;Júlia Téles Cruz | 2020 - 2022
 ________
 
